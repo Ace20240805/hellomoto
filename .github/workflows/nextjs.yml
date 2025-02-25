@@ -19,7 +19,7 @@ jobs:
         run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
 
       - name: Export static site from Vercel
-        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes --output=out
+        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
