@@ -3,7 +3,7 @@ name: Deploy Vercel to GitHub Pages
 on:
   push:
     branches:
-      - main  # 只有 main 分支的變更才會觸發部署
+      - main  # 只有 main 分支的變更才會觸發部署 
 
 jobs:
   deploy:
