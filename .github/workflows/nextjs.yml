@@ -16,7 +16,7 @@ jobs:
         run: npm install --global vercel@latest
 
       - name: Deploy to Vercel
-        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
 
       - name: Export static site from Vercel
         run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes --output=out
