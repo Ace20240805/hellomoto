@@ -9,17 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install Vercel CLI
-        run: npm install --global vercel@latest
-
-      - name: Deploy to Vercel
-        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
-
-      - name: Export static site from Vercel
-        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
+    
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
